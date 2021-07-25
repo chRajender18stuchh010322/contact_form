@@ -1,0 +1,23 @@
+<div style="margin: 80px">
+  <h1>Contact</h1>
+  <h4>Contact us directly if you have any questions</h4>
+  <p>
+    Please write your name, email address and a message below if you have any
+    questions. One of our staff members will be happy to contact you directly
+    and answer your questions as soon as possible.
+  </p>
+  <form method="post">
+    {% csrf_token %}
+    <h1>Name:</h1>
+    {{form.name}}
+    <br />
+    <h1>Email:</h1>
+    {{form.email_address}}
+    <br />
+    <h1>Body:</h1>
+    {{form.message}}
+    <br />
+
+    <button type="submit"><h3>SUBMIT</h3></button>
+  </form>
+</div>
